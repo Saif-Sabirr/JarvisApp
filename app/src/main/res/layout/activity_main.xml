@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_deep"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J.A.R.V.I.S."
+        android:textColor="@color/cyan"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:letterSpacing="0.15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Grant these once, then the assistant floats over any app you're using."
+        android:textColor="@color/text_dim"
+        android:textSize="13sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/permissionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/text_main"
+        android:textSize="13sp"
+        android:lineSpacingExtra="4dp" />
+
+    <Button
+        android:id="@+id/btnGrantPermissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="1. Grant mic / call / text / contacts / camera"
+        android:backgroundTint="@color/bg_panel"
+        android:textColor="@color/cyan" />
+
+    <Button
+        android:id="@+id/btnOverlayPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="2. Allow floating overlay"
+        android:backgroundTint="@color/bg_panel"
+        android:textColor="@color/cyan" />
+
+    <Button
+        android:id="@+id/btnLaunchOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Start Jarvis"
+        android:backgroundTint="@color/cyan_dim"
+        android:textColor="@color/text_main" />
+
+</LinearLayout>

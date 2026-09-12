@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.jarvis.assistant.ScanOverlayView
+        android:id="@+id/scanOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#AA05080D"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/scanStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Point at a product or hold up your hand…"
+            android:textColor="@color/cyan"
+            android:textSize="13sp"
+            android:fontFamily="monospace" />
+
+        <TextView
+            android:id="@+id/btnCloseScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✕ CLOSE"
+            android:textColor="@color/text_dim"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</FrameLayout>

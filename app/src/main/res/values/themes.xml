@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Jarvis" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@color/bg_deep</item>
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/bg_deep</item>
+        <item name="colorAccent">@color/amber</item>
+        <item name="android:statusBarColor">@color/bg_deep</item>
+    </style>
+</resources>
